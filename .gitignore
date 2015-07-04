@@ -1,0 +1,9 @@
+*.DS_STORE
+applab_web/static/applab_web/tmp
+*.pyc
+*.pyo
+node_modules
+npm-debug.log
+*.sass-cache
+*css.map
+*js.map
