@@ -1,4 +1,21 @@
 // Main Sass file. Everything is to be loaded here
 // ============================================================
 
-@import "bootstrap/stylesheets/bootstrap.scss";
+
+//Load bootstrap
+@import "bootstrap/stylesheets/bootstrap";
+
+//Load common
+@import "common/fonts";
+@import "common/base";
+
+
+//Load templates
+@import "pages/home";
+
+
+
+
+
+
+
