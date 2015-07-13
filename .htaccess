@@ -1,0 +1,19 @@
+
+Alias /media/ /applab_web/media/
+Alias /static/ /applab_web/static/
+
+<Directory /applab_web/static>
+Require all granted
+</Directory>
+
+<Directory /applab_web/media>
+Require all granted
+</Directory>
+
+WSGIScriptAlias / /applab/wsgi.py
+
+<Directory /applab>
+<Files wsgi.py>
+Require all granted
+</Files>
+</Directory>
