@@ -50,6 +50,9 @@
 			@media screen and (max-width: 600px) {
 				font-size: 30px;
 			}
+			@media screen and (min-width: 600px) and (max-width: $screen-sm) {
+				font-size: 40px;
+			}
 			font-family: "Gotham-Pro-Black";
 			color: #e5e5e3;
 			text-align: center;
