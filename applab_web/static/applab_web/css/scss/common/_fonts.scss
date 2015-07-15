@@ -1,6 +1,14 @@
 @font-face {
-	font-family: "gotham_book";
-	src: url('../../fonts/OpenSans-Bold.ttf'); 
+	font-family:'Gotham-Book';
+	src: url('../../fonts/gotham-book/Gotham-Book_gdi.eot');
+	src: url('../../fonts/gotham-book/Gotham-Book_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/gotham-book/Gotham-Book_gdi.woff') format('woff'),
+		url('../../fonts/gotham-book/Gotham-Book_gdi.ttf') format('truetype'),
+		url('../../fonts/gotham-book/Gotham-Book_gdi.otf') format('opentype'),
+		url('../../fonts/gotham-book/Gotham-Book_gdi.svg#Gotham-Book') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
 }
 
 @font-face {
@@ -10,9 +18,14 @@
 
 
 @font-face {
-	font-family: "gotham_pro_black";
-	src: url('../../fonts/gotham_pro_black.eot');
-	src: local('../../fonts/gotham_pro_black');
-	src: url('../../fonts/gotham_pro_black.svg#gotham_pro_black') format('svg');
-	src: url('../../fonts/gotham_pro_black.otf') format('opentype'); 
+    font-family: 'Gotham-Pro-Black';
+    src: url('../../fonts/gotham_pro_black/gotham_pro_black-webfont.eot');
+    src: url('../../fonts/gotham_pro_black/gotham_pro_black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/gotham_pro_black/gotham_pro_black-webfont.woff2') format('woff2'),
+         url('../../fonts/gotham_pro_black/gotham_pro_black-webfont.woff') format('woff'),
+         url('../../fonts/gotham_pro_black/gotham_pro_black-webfont.ttf') format('truetype'),
+         url('../../fonts/gotham_pro_black/gotham_pro_black-webfont.svg#gotham_problack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }

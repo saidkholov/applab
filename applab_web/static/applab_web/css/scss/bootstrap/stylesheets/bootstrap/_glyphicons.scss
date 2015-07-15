@@ -7,6 +7,15 @@
 //
 // <a href="#"><span class="glyphicon glyphicon-star"></span> Star</a>
 
+
+
+$icon-font-path: "../../fonts/bootstrap/";
+
+//** File name for all font files.
+ $icon-font-name: "glyphicons-halflings-regular";
+//** Element ID within SVG icon file.
+ $icon-font-svg-id: "glyphicons_halflingsregular";
+
 @at-root {
   // Import the fonts
   @font-face {

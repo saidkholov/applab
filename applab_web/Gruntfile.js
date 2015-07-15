@@ -7,14 +7,15 @@ module.exports = function(grunt) {
         sourceMap : true,
       },
       dist: {
-        src : "<%= pkg.static %>/js/**/*.js",
+        src : ["<%= pkg.static %>/js/**/*.js",
+              "!<%= pkg.static %>/js/jquery.min.js"],
         dest : "<%= pkg.static %>/tmp/<%=pkg.name %>.js"
       }
     },
     sass: {                              // Task 
       dist: {                            // Target 
         files: {                         // Dictionary of files 
-          '<%= pkg.static %>/css/style.css' : '<%= pkg.static %>/css/scss/style.scss'       // 'destination': 'source' 
+          '<%= pkg.static %>/tmp/style.css' : '<%= pkg.static %>/css/scss/style.scss'       // 'destination': 'source' 
         }
       }
     },
@@ -37,7 +38,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'dist/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
+          '<%= pkg.static %>/dist/js/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
         }
       }
     },
@@ -47,7 +48,7 @@ module.exports = function(grunt) {
       },
       target: {
         files: {
-          '<%= pkg.static %>/dist/css/<%= pkg.name %>.min.css': '<%= pkg.static %>/css/style.css'
+          '<%= pkg.static %>/dist/css/<%= pkg.name %>.min.css': '<%= pkg.static %>/tmp/style.css'
         }
       }
     },
@@ -61,7 +62,7 @@ module.exports = function(grunt) {
           jQuery: true
         }
       },
-        all: ['Gruntfile.js', 'js/components/*.js']
+        all: ['Gruntfile.js', '<%= pkg.static %>/js/**/*.js']
     },
 
   });
