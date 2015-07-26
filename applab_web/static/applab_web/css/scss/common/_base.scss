@@ -1,3 +1,47 @@
 body {
 	font-family: "Gotham-Book";
+	background: #f6f6f6;
+}
+
+header {
+	font-family: "Gotham-Pro-Black";
+	nav {
+		.navbar-header {
+			background: transparent;
+			.navbar-toggle {
+				background: transparent;
+				.icon-bar {
+					background: #fff;
+				}
+			}
+		}
+		ul.nav {
+			float: none;
+			width: 100%;
+			text-align: center;
+			li {
+				display: inline-block;
+				float: none;
+				a {
+					font-size: 15px;
+					@media screen and (min-width: $screen-sm) and (max-width: 992px ) {
+						font-size: 13px;
+					}
+					color: #a8aaa8;
+					&:active {
+						background: none;
+					}
+					&:hover {
+						color: #fff;
+						background: none;
+					}
+				}
+				&.active {
+					a {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
 }

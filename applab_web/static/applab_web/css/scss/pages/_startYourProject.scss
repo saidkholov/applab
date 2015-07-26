@@ -1,0 +1,45 @@
+// Start your project page
+// ==============================================================
+
+// Vars
+
+$top-margin: 35px;
+
+.startYourProject {
+	.navbar{
+		font-family: "Gotham-Book";
+		background: #2a3333;
+		ul {
+			text-align: left;
+		}
+	}
+	.select-product {
+		font-size: 21px;
+	}
+	.user-form {
+		margin-top: $top-margin;
+		h1 {
+			font-size: 45px;
+		}
+		h4 {
+			font-size: 15px;
+			color: #a8aaa8;
+		}
+		form {
+			margin-top: $top-margin;
+			.submit-button {
+				text-align: center;
+				button {
+					color: #fff;
+					padding: 7px;
+					border: none;
+					border-radius: 10px;
+					&:hover {
+						background: lighten(#000, 20%);
+					}
+					background: #000;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+// Buttons
+// ==================================================
+
+%button {
+	display: inline;
+	padding: 10px 20px;
+	border: 1px solid #fff;
+	font-size: 21px;
+	color: #fff;
+	&:hover, &:active {
+		text-decoration: none;
+		color: #000;
+		background: #fff;
+	}
+}

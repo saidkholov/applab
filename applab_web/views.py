@@ -5,3 +5,6 @@ from django.shortcuts import render
 
 def index(request):
 	return render(request, 'applab_web/index.html')
+
+def startYourProject(request):
+	return render(request, 'applab_web/startYourProject.html')

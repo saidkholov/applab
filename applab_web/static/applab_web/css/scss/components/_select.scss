@@ -8,17 +8,27 @@
     background-color: transparent;
     position: relative;
     margin-top: 15px;
+    &.alternative {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background: #ffffff;
+        @include gradient-vertical(#ffffff, #dedede, 0%, 100%);
+        .glyphicon {
+            font-size: 16px;
+        }
+    }
     .glyphicon {
     	position: absolute;
     	right: 5px;
     	top: 18px;
+
     }
     select {
     	&:hover {
     		cursor: pointer;
     	}
 	    padding: 0 8px;
-	    font-size: 30px;
+	    font-size: inherit;
 	    width: 130%;
 	    height: 47px;
 	    border: none;
