@@ -1,7 +1,7 @@
 $(function(){
 	$(window).resize(resetHomeSize);
-	resetHomeSize()
+	resetHomeSize();
 	function resetHomeSize(){
-		$('.home-page').css('minHeight',$(window).height())
+		$('.home-page').css('minHeight',$(window).height());
 	}	
-})
+});

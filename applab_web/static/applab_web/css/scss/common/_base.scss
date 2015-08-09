@@ -28,7 +28,7 @@ header {
 						font-size: 13px;
 					}
 					color: #a8aaa8;
-					&:active {
+					&:active, &:focus {
 						background: none;
 					}
 					&:hover {

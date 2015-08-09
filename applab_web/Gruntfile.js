@@ -8,9 +8,16 @@ module.exports = function(grunt) {
       },
       dist: {
         src : ["<%= pkg.static %>/js/**/*.js",
-              "!<%= pkg.static %>/js/jquery.min.js"],
+              "!<%= pkg.static %>/js/jquery.min.js",
+              "!<%= pkg.static %>/js/start-your-project/**"],
         dest : "<%= pkg.static %>/tmp/<%=pkg.name %>.js"
-      }
+      },
+      startYourProject : {
+        src : ["<%= pkg.static %>/js/start-your-project/**/*.js",
+               "!<%= pkg.static %>/js/start-your-project/angular/*",],
+        dest : "<%= pkg.static %>/tmp/startYourProject.js"
+      },
+
     },
     sass: {                              // Task 
       dist: {                            // Target 
@@ -26,7 +33,11 @@ module.exports = function(grunt) {
       },
       js : {
         files: ['<%= concat.dist.src %>'],
-        tasks: ['concat','uglify']
+        tasks: ['concat:dist','uglify:dist']
+      },
+      startYourProject : {
+        files: ['<%= concat.startYourProject.src %>'],
+        tasks: ['concat:startYourProject','uglify:startYourProject']
       }
     },
     uglify: {
@@ -39,6 +50,11 @@ module.exports = function(grunt) {
       dist: {
         files: {
           '<%= pkg.static %>/dist/js/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
+        }
+      },
+      startYourProject: {
+        files: {
+          '<%= pkg.static %>/dist/js/start-your-project.min.js': ['<%= concat.startYourProject.dest %>']
         }
       }
     },
@@ -62,7 +78,7 @@ module.exports = function(grunt) {
           jQuery: true
         }
       },
-        all: ['Gruntfile.js', '<%= pkg.static %>/js/**/*.js']
+        all: ['Gruntfile.js', '<%= pkg.static %>/js/ready.js', ]
     },
 
   });
