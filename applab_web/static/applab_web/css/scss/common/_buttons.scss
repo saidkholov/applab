@@ -13,3 +13,17 @@
 		background: #fff;
 	}
 }
+
+.submit-button {
+	text-align: center;
+	button {
+		color: #fff;
+		padding: 7px;
+		border: none;
+		border-radius: 10px;
+		&:hover {
+			background: lighten(#000, 20%);
+		}
+		background: #000;
+	}
+}

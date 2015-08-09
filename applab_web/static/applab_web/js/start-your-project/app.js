@@ -10,6 +10,9 @@ startYourProject.config(['$routeProvider',
 			when('/product-type', {
 				templateUrl: '/static/applab_web/js/start-your-project/views/product-type.html',
 			}).
+			when('/app-link', {
+				templateUrl: '/static/applab_web/js/start-your-project/views/app-link.html',
+			}).
 			otherwise({
 				redirectTo: '/'
 			});

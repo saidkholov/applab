@@ -1,9 +1,9 @@
-// Product type page: second step
+// Product type page: second step and app link page: third step
 // ============================================= 
 
 $top-margin: 35px;
 
-.product-list {
+.centered-bock {
 	margin-top: $top-margin;
 	h1 {
 		font-size: 15px;
@@ -13,7 +13,14 @@ $top-margin: 35px;
 		font-size: 40px;
 		margin: 0px;
 	}
+	p {
+		margin: 20px 0;
+		color: #a8aaa8;
+		font-size: 14px;
+	}
 
+	// Select app type step
+	// ===============================
 	ul {
 		padding: 0px;
 		margin-top: $top-margin; 
@@ -43,6 +50,13 @@ $top-margin: 35px;
 					font-size: 11px;
 				}
 			}
+		}
+	}
+	// Enter link to app step
+	// =============================
+	form {
+		label {
+			font-size: 17px;
 		}
 	}
 }
