@@ -1,0 +1,28 @@
+// Summary page
+// =====================================
+
+.document-upload {
+	.upload-section {
+		border: 1px solid #e2e3e3;
+		padding: 15px;
+		overflow: hidden;
+		width: 100%;
+		cursor: pointer;
+		.link-icon {
+			float: left;
+		}
+		.description {
+			margin-left: 15px;
+			float: left;
+		}
+	}
+	.tip {
+		color: #b2b2b2;
+		font-size: 13px;
+	}
+
+	.input-file-hidden {
+		height: 0px;
+		visibility: hidden;
+	}
+}

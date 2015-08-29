@@ -1,0 +1,45 @@
+<div class="container">
+	<div class="row">
+		<div class="col-lg-offset-2 col-lg-8  col-md-offset-1 col-md-10 col-sm-12 ">
+	    	<div class="centered-bock">
+	    		<h1 class="text-center">A NEW {{formData.type | uppercase}} APP WITH COME ON</h1>
+	    		<h4 class="text-center">You're on fire! Tsss.</h4>
+	    		<h4 class="text-center">Describe your idea in a few sentences - And / Or - Attach a brief summary</h4>
+	    		<p class="text-center">The more details we have about your project, the easier it is to match you with the right professional.</p>
+	    	</div>
+	    </div>
+	</div>
+	<div class="row">
+		<div class="col-xs-10 col-xs-offset-1">
+			<div class="centered-block">
+				<div class="form-group ">
+					<label for="summary">Summary</label>
+					<textarea class="form-control " id="summary" ng-model="formData.summary" rows="9" type="text" name="summary" placeholder="I want to redesign my..."></textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="document-upload row">
+		<div class="col-xs-10 col-xs-offset-1">
+			<p class="text-center">and / or</p>
+			<label for="file" class="upload-section">
+				<div class="link-icon">
+					<img src="/static/applab_web/images/link-icon.png">
+				</div>
+				<div class="description tip">
+					I have a written brief<br>
+					Click here to attach a brief
+				</div>
+			</label>
+			<input type="file" id ="file" name="file" class="input-file-hidden" ng-model="formData.file">
+			<p class="tip">Tip: Accepted file (.jpg, .png. .pdf, .doc, .docx).</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="submit-button form-group col-xs-12">
+				<button class="col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2" ng-click="submit()" type="button" >Continue</button>
+			</div>
+		</div>
+	</div>
+</div>

@@ -39,18 +39,18 @@
 		    		<fieldset>
 		    			<div class="form-group col-sm-6" >
 		    				<label for="name">Name</label>
-		    				<input class="form-control " id="name"  type="text" name="name" placeholder="Alan Smith">
+		    				<input class="form-control" ng-model="formData.name" id="name"  type="text" name="name" placeholder="Alan Smith">
 		    			</div>
 		    			<div class="form-group col-sm-6">
 		    				<label for="phone">Phone</label>
-		    				<input class="form-control" id="phone"  type="text" name="phone" placeholder="020 403 924 45">
+		    				<input class="form-control" id="phone" ng-model="formData.phone"  type="text" name="phone" placeholder="020 403 924 45">
 		    			</div>
 		    			<div class="form-group col-xs-12">
 		    				<label for="email">Email</label>
-		    				<input class="form-control" id="email"  type="text" name="email" placeholder="alan.smith@gmail.com">
+		    				<input class="form-control" id="email" ng-model="formData.email"  type="text" name="email" placeholder="alan.smith@gmail.com">
 		    			</div>
 		    			<div class="submit-button form-group col-xs-12">
-		    				<button class="col-md-4 col-md-offset-4 col-xs-12" type="submit">Continue</button>
+		    				<a class="col-md-4 col-md-offset-4 col-xs-12" href="#product-type">Continue</a>
 		    			</div>
 	    			</fieldset>
 		    	</div>

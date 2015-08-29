@@ -1,10 +1,6 @@
-var ProjectControllers = angular.module('ProjectControllers', []);
+angular.module('ProjectControllers')
+	.controller('indexCtrl', ['$scope', '$http','formData', function($scope, $http, formData) {
+		
+		$scope.formData = formData.get();
 
-
-ProjectControllers.controller('indexCtrl', ['$scope, $http', function($scope, $http) {
-   
-	$scope.submit = function() {
-		$http.post('/product-type');
-	};
-
-}]);
+	}]);

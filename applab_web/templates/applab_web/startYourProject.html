@@ -53,8 +53,8 @@
                     </div><!-- /.container-fluid -->
                 </nav>
             </header>
-            <section >
-                <form action="#/product-type" method="POST">
+            <section>
+                <form id="quote-form">
                     {% csrf_token %}
                     <div ng-view></div>
                 </form>
