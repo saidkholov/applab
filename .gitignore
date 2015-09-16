@@ -7,3 +7,5 @@ npm-debug.log
 *.sass-cache
 *css.map
 *js.map
+.ssh
+*.pem
