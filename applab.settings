@@ -1,4 +1,4 @@
 {
     "ENV": "staging",
-    "DEBUG": false,
+    "DEBUG": False,
 }
