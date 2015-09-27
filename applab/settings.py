@@ -75,16 +75,6 @@ WSGI_APPLICATION = 'applab.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'applab',
-        'USER' : 'root',
-        'HOST' : '',
-        'PASSWORD' : '22445577'
-    }
-}
-
 if 'RDS_HOSTNAME' in os.environ:
     DATABASES = {
         'default': {
@@ -96,6 +86,16 @@ if 'RDS_HOSTNAME' in os.environ:
             'PORT': os.environ['RDS_PORT'],
         }
     }
+else:
+    DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'applab',
+        'USER' : 'root',
+        'HOST' : '',
+        'PASSWORD' : '22445577'
+    }
+}
 
 
 # Internationalization
