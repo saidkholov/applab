@@ -4,9 +4,16 @@ angular.module('ProjectControllers').
 		$scope.formData = formData.get();
 		$scope.formData.csrfmiddlewaretoken = $('input[name=csrfmiddlewaretoken]').val();
 
+		console.log($scope.formData)
 		$scope.submit = function(){
-			$http.post('/services/process-quote',$scope.formData).then(function() {
-				console.log('done')
-			});
+			$scope.formData.file = document.getElementById('file').files[0];
+			var formData = new FormData();
+			for (var key in $scope.formData) {
+				formData.append(key, $scope.formData[key]);
+			}
+			$http.post('/services/process-quote',formData, {headers: {'Content-Type': undefined}})
+				.then(function() {
+					console.log('done');
+				});
 		}
 	}]);

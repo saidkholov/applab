@@ -7,3 +7,6 @@ def index(request):
 
 def startYourProject(request):
 	return render(request, 'applab_web/startYourProject.html')
+
+def thankyou(request):
+	return render(request, 'applab_web/thank-you.html')

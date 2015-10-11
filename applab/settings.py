@@ -40,6 +40,12 @@ INSTALLED_APPS = (
     'applab_web'
 )
 
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'skholov2@gmail.com'
+EMAIL_HOST_PASSWORD = 'gosha1989'
+EMAIL_PORT = 587
+
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
