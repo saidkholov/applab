@@ -25,6 +25,9 @@ startYourProject.config(['$routeProvider', '$httpProvider',
 			}).when('/summary', {
 				templateUrl: '/static/applab_web/js/start-your-project/views/summary.html',
 				controller: 'summary'
+			}).when('/thank-you', {
+				templateUrl: '/static/applab_web/js/start-your-project/views/thank-you.html',
+				controller: 'thankYou'
 			}).
 			otherwise({
 				redirectTo: '/'

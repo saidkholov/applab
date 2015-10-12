@@ -11,7 +11,7 @@ angular.module('ProjectServices').
 
 		publicApi = {
 			get : function() {
-				// validate();
+				validate();
 				return formData;
 			},
 		};

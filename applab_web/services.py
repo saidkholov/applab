@@ -24,6 +24,6 @@ def index(request):
 
 		admins = Admin.objects.values_list('email', flat=True)
 		message = "A new request for " + quote.project_type + " project has been received. Please go to http://applab.co.nz/admin for more information."
-		send_mail('New Applab Quote', message, 'skholov2@gmail.com', admins, fail_silently=False)
+		#send_mail('New Applab Quote', message, 'skholov2@gmail.com', admins, fail_silently=False)
 		
 	return HttpResponse();
