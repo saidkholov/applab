@@ -46,6 +46,12 @@ EMAIL_HOST_USER = 'skholov2@gmail.com'
 EMAIL_HOST_PASSWORD = 'gosha1989'
 EMAIL_PORT = 587
 
+# EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+# EMAIL_FILE_PATH = 'tmp/email-messages/'
+SERVER_EMAIL = "skholov2@gmail.com"
+ADMINS = (('Said Kholov', 'skholov2@gmail.com'))
+
+
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',

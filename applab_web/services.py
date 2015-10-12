@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.core.mail import mail_admins
+from django.core.mail import mail_admins, send_mail
 from .models import Quote, User
 
 def index(request):
@@ -22,6 +22,6 @@ def index(request):
 		quote.save()
 
 		message = "A new request for " + quote.project_type + " project has been received. Please go to http://applab.co.nz/admin for more information."
-		mail_admins("New Applab Quote", message, "web_client@theapplab.co.nz")
+		mail_admins("New Applab Quote", message)
 		
 	return HttpResponse();
