@@ -41,16 +41,10 @@ INSTALLED_APPS = (
 )
 
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'skholov2@gmail.com'
-EMAIL_HOST_PASSWORD = 'gosha1989'
+EMAIL_HOST = 'email-smtp.us-west-2.amazonaws.com'
+EMAIL_HOST_USER = 'AKIAJEOCDIWRENS2OBBQ'
+EMAIL_HOST_PASSWORD = 'AuUZT1sDVe6AzR9vnVkb6cFULyjwX7iARhUDRf1UgsOR'
 EMAIL_PORT = 587
-
-# EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
-# EMAIL_FILE_PATH = 'tmp/email-messages/'
-SERVER_EMAIL = "skholov2@gmail.com"
-ADMINS = (('Said Kholov', 'skholov2@gmail.com'))
-
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
