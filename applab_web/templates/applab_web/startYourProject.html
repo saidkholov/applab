@@ -55,6 +55,8 @@
             </header>
             <section>
                 <form id="quote-form">
+                    <input type="hidden" ng-init="formData.projectType='{{type}}'"/>
+                    <input type="hidden" ng-init="formData.what='{{what}}'"/>
                     {% csrf_token %}
                     <div ng-view></div>
                 </form>

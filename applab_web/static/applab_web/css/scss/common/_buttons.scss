@@ -7,10 +7,14 @@
 	border: 1px solid #fff;
 	font-size: 21px;
 	color: #fff;
+	background: none;
 	&:hover, &:active {
 		text-decoration: none;
 		color: #000;
 		background: #fff;
+	}
+	&:focus {
+		outline: 0px;
 	}
 }
 

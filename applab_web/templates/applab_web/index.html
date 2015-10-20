@@ -51,37 +51,37 @@
                 </nav>
             </header>
             <section class="cta">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1>Work with the best designers <br> and developers without <br> breaking the bank.</h1>
-                        </div>
-                        <div class="col-lg-offset-3 col-lg-6  col-md-offset-2 col-md-8 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
-                            <div class="row">
-                                <div class="select-product">
-                                    <div class="col-md-3 col-xs-12">
-                                        <h2>I need...</h2>
-                                    </div>
-                                    <div class="col-md-9 col-xs-12">
-                                        <div class="row">
-                                            <div class="col-xs-6">
-                                                <div class="applab-selectbox">
-                                                    <select>
-                                                        <option>a new</option>
-                                                        <option>an old </option>
-                                                        <option>used:)</option>
-                                                    </select>
-                                                    <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                <form action="/start-your-project" method="GET">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1>Work with the best designers <br> and developers without <br> breaking the bank.</h1>
+                            </div>
+                            <div class="col-lg-offset-3 col-lg-6  col-md-offset-2 col-md-8 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+                                <div class="row">
+                                    <div class="select-product">
+                                        <div class="col-md-3 col-xs-12">
+                                            <h2>I need...</h2>
+                                        </div>
+                                        <div class="col-md-9 col-xs-12">
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <div class="applab-selectbox">
+                                                        <select id="type" name="type">
+                                                            <option value="new">a new</option>
+                                                            <option value="overhaul">an overhaul</option>
+                                                        </select>
+                                                        <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-xs-6 ">
-                                                <div class="applab-selectbox">
-                                                    <select>
-                                                        <option>app</option>
-                                                        <option>website </option>
-                                                        <option>shoes</option>
-                                                    </select>
-                                                    <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                                                <div class="col-xs-6 ">
+                                                    <div class="applab-selectbox">
+                                                        <select id="what" name="what" ng-model="what">
+                                                            <option value="app">app</option>
+                                                            <option value="website">website </option>
+                                                        </select>
+                                                        <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -89,18 +89,18 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 get-started-button">                            
-                            <a href="/start-your-project">Get Started</a>
+                        <div class="row">
+                            <div class="col-md-12 get-started-button">                            
+                                <button type="submit" href="/start-your-project">Get Started</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 guarantee">
+                                <span>You're covered by our Money-Back Guarantee.</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12 guarantee">
-                            <span>You're covered by our Money-Back Guarantee.</span>
-                        </div>
-                    </div>
-                </div>
+                </form>
             </section>
         </div>
 

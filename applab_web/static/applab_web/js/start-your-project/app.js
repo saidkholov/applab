@@ -3,30 +3,38 @@ angular.module('ProjectServices', []);
 
 var startYourProject = angular.module('startYourProject', ['ngRoute','ProjectControllers', 'ProjectServices']);
 
-startYourProject.config(['$routeProvider', '$httpProvider',
-	function($routeProvider, $httpProvider) {
+
+
+startYourProject.config(['$routeProvider', '$httpProvider','SequenceProvider',
+	function($routeProvider, $httpProvider, SequenceProvider) {
 		
 		$httpProvider.defaults.xsrfHeaderName = 'X-CSRFToken';
 		$httpProvider.defaults.xsrfCookieName = 'csrftoken';
 		
+		var templatePath = '/static/applab_web/js/start-your-project/views/'
+
 		$routeProvider.
 			when('/', {
-				templateUrl: '/static/applab_web/js/start-your-project/views/index.html',
-				controller: 'indexCtrl'
-			}).
-			when('/product-type', {
-				templateUrl: '/static/applab_web/js/start-your-project/views/product-type.html',
-				controller: 'productType'
-			}).
-			when('/app-link', {
-				templateUrl: '/static/applab_web/js/start-your-project/views/app-link.html',
-				controller: 'appLink'
-
-			}).when('/summary', {
-				templateUrl: '/static/applab_web/js/start-your-project/views/summary.html',
-				controller: 'summary'
-			}).when('/thank-you', {
-				templateUrl: '/static/applab_web/js/start-your-project/views/thank-you.html',
+				templateUrl: templatePath + 'step.html',
+				controller: 'stepCtrl'
+			})
+			.when('/:step', {
+				templateUrl: templatePath + 'step.html',
+				controller: 'stepCtrl'
+			})
+			// .when('/step-two', {
+			// 	templateUrl: templatePath + 'step-two.html',
+			// 	controller: 'stepTwoCtrl'
+			// }).
+			// when('/step-three', {
+			// 	templateUrl: templatePath + 'step-three.html',
+			// 	controller: 'stepThreeCtrl'
+			// }).when('/step-four', {
+			// 	templateUrl: templatePath + 'step-four.html',
+			// 	controller: 'stepFourCtrl'
+			// })
+			.when('/thank-you', {
+				templateUrl: templatePath + 'thank-you.html',
 				controller: 'thankYou'
 			}).
 			otherwise({

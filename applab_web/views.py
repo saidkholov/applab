@@ -6,4 +6,5 @@ def index(request):
 	return render(request, 'applab_web/index.html')
 
 def startYourProject(request):
-	return render(request, 'applab_web/startYourProject.html')
+	context = {'type': request.GET['type'], 'what': request.GET['what']}
+	return render(request, 'applab_web/startYourProject.html', context)

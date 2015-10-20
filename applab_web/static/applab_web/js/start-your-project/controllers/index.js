@@ -1,6 +1,4 @@
 angular.module('ProjectControllers')
-	.controller('indexCtrl', ['$scope', '$http','formData', function($scope, $http, formData) {
-		
-		$scope.formData = formData.get();
-
+	.controller('indexCtrl', ['$scope', '$http','formData','Sequence', function($scope, $http, formData, Sequence) {
+		formData.set($scope.formData);
 	}]);
