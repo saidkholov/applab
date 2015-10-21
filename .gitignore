@@ -10,8 +10,10 @@ npm-debug.log
 .ssh
 *.pem
 *.min.js
+*.min.css
 uploads
 static/
+tmp/
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
