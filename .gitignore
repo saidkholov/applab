@@ -11,7 +11,7 @@ npm-debug.log
 *.pem
 *.min.js
 uploads
-static/
+/static/
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
