@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" ng-controller="productTypeCtrl">
 	<div class="row">
 		<div class="col-lg-offset-2 col-lg-8  col-md-offset-1 col-md-10 col-sm-12 ">
 	    	<div class="centered-bock">
@@ -7,21 +7,21 @@
 	    		<h4 class="text-center">What type of app are you building?</h4>
 	    		<ul class="row">
 	    			<li class="col-sm-4">
-	    				<a href="#/{{next-link}}" ng-click="formData.type='ios'" class="item">
+	    				<a href="#/{{step}}" ng-click="formData.type='ios'" class="item">
 	    					<img class="adjusted" src="/static/applab_web/images/apple.png" height="58">
 	    					<h5>Apple iOS</h5>
 	    					<p>iPhone / iPad</p>
 	    				</a>
 	    			</li>
 	    			<li class="col-sm-4">
-	    				<a href="#/{{next-link}}" ng-click="formData.type='android'" class="item">
+	    				<a href="#/{{step}}" ng-click="formData.type='android'" class="item">
 		    				<img class="adjusted" src="/static/applab_web/images/android.png" height="58">
 		    				<h5>Android</h5>
 	    					<p>Phone / Tablet</p>
 		    			</a>
 	    			</li>
 	    			<li class="col-sm-4">
-	    				<a href="#/{{next-link}}" ng-click="formData.type='hybrid'" class="item">
+	    				<a href="#/{{step}}" ng-click="formData.type='hybrid'" class="item">
 		    				<img src="/static/applab_web/images/hybrid.png" height="58">
 		    				<h5>Apple iOS and Android</h5>
 	    					<p>Cross Platform</p>

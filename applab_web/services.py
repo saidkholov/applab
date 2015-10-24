@@ -12,12 +12,14 @@ def index(request):
 			phone = request.POST['phone'],
 		)
 		user.save()
+
 		# Save Quote
 		quote = Quote(
 			file = request.FILES['file'], 
-			user_id = user.id, 
-			project_type = request.POST['type'],
-			project_link = request.POST['appLink'],
+			user_id = user.id,
+			project_type = request.POST['projectType'],
+			type = request.POST['type'],
+			project_link = request.POST.get('appLink', None),
 			summary = request.POST['summary'],
 		)
 		quote.save()

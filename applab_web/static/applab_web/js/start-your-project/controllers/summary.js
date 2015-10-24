@@ -1,7 +1,6 @@
 angular.module('ProjectControllers').
-	controller('summary', ['$scope', '$http', '$location', 'formData', function($scope, $http, $location, formData) {
+	controller('summaryCtrl', ['$scope', '$http', '$location', function($scope, $http, $location) {
 		
-		$scope.formData = formData.get();
 		$scope.formData.csrfmiddlewaretoken = $('input[name=csrfmiddlewaretoken]').val();
 
 		$scope.submit = function(){
@@ -12,7 +11,7 @@ angular.module('ProjectControllers').
 			}
 			$http.post('/services/process-quote',formData, {headers: {'Content-Type': undefined}})
 				.then(function() {
-					$location.path('/thank-you')
+					$location.path('/5');
 				});
 		}
 	}]);

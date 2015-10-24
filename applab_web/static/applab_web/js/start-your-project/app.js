@@ -22,17 +22,6 @@ startYourProject.config(['$routeProvider', '$httpProvider','SequenceProvider',
 				templateUrl: templatePath + 'step.html',
 				controller: 'stepCtrl'
 			})
-			// .when('/step-two', {
-			// 	templateUrl: templatePath + 'step-two.html',
-			// 	controller: 'stepTwoCtrl'
-			// }).
-			// when('/step-three', {
-			// 	templateUrl: templatePath + 'step-three.html',
-			// 	controller: 'stepThreeCtrl'
-			// }).when('/step-four', {
-			// 	templateUrl: templatePath + 'step-four.html',
-			// 	controller: 'stepFourCtrl'
-			// })
 			.when('/thank-you', {
 				templateUrl: templatePath + 'thank-you.html',
 				controller: 'thankYou'

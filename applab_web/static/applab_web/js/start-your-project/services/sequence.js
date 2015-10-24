@@ -3,11 +3,11 @@ angular.module('ProjectServices').
 		var templates = [];
 
 		var newApp = function() {
-			templates = ['index', 'product-type', 'features','summary'];
+			templates = ['index', 'product-type', 'features','summary', 'thank-you'];
 		};
 
 		var overhaulApp = function() {
-			templates = ['index', 'product-type', 'summary', 'app-link'];
+			templates = ['index', 'product-type', 'summary', 'app-link','thank-you'];
 		};
 
 		var publicApi = {

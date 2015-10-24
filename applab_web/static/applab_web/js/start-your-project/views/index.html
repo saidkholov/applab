@@ -10,7 +10,7 @@
 		                <div class="row">
 		                    <div class="col-xs-6">
 		                        <div class="applab-selectbox alternative">
-		                            <select name="type" ng-model="formData.type">
+		                            <select name="type" ng-model="formData.projectType">
 		                                <option value="new">a new</option>
 		                                <option value="overhaul">an overhaul</option>
 		                            </select>
@@ -48,7 +48,7 @@
 		    				<input class="form-control" id="email" ng-model="formData.email"  type="text" name="email" placeholder="alan.smith@gmail.com">
 		    			</div>
 		    			<div class="submit-button form-group col-xs-12">
-		    				<a class="col-md-4 col-md-offset-4 col-xs-12" href="#product-type">Continue</a>
+		    				<a class="col-md-4 col-md-offset-4 col-xs-12" href="#{{step}}">Continue</a>
 		    			</div>
 	    			</fieldset>
 		    	</div>
