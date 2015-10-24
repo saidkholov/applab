@@ -1,17 +1,18 @@
 angular.module('ProjectControllers', []);
 angular.module('ProjectServices', []);
+angular.module('ProjectDirectives', []);
 
-var startYourProject = angular.module('startYourProject', ['ngRoute','ProjectControllers', 'ProjectServices']);
+var startYourProject = angular.module('startYourProject', ['ngRoute','ProjectControllers', 'ProjectServices', 'ProjectDirectives']);
 
 
 
-startYourProject.config(['$routeProvider', '$httpProvider','SequenceProvider',
-	function($routeProvider, $httpProvider, SequenceProvider) {
+startYourProject.config(['$routeProvider', '$httpProvider',
+	function($routeProvider, $httpProvider) {
 		
 		$httpProvider.defaults.xsrfHeaderName = 'X-CSRFToken';
 		$httpProvider.defaults.xsrfCookieName = 'csrftoken';
 		
-		var templatePath = '/static/applab_web/js/start-your-project/views/'
+		var templatePath = '/static/applab_web/js/start-your-project/templates/';
 
 		$routeProvider.
 			when('/', {

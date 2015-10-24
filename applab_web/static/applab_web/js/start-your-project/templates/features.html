@@ -1,0 +1,114 @@
+<div class="container" ng-controller="featuresCtrl">
+	<div class="row">
+		<div class="col-lg-offset-2 col-lg-8  col-md-offset-1 col-md-10 col-sm-12 ">
+	    	<div class="centered-bock">
+	    		<h1 class="text-center">A NEW {{formData.type | uppercase}} WITH COME ON</h1>
+	    		<h4 class="text-center">Awww ya. We’re almost there.</h4>
+	    		<h4 class="text-center">What features do you need?</h4>
+	    		<p class="text-center">The features you choose will create a ballpark budget recommendation.</p>
+	    	</div>
+	    </div>
+	</div>
+	<div class="row">
+	</div>
+	<div class="row features">
+		<div class="col-md-12">
+			<div class="row">
+				<div class=" col-md-one-fifth feature">
+					<img src="/static/applab_web/images/features/login.png">
+					<div class="feature-title">Email/Username Login</div>
+					<div class="feature-description">Login with an email or username</div>
+					<customswitch></customswitch>
+				</div>
+				<div class="col-md-one-fifth feature">
+					<img src="/static/applab_web/images/features/ratings.png">
+					<div class="feature-title">Ratings/Reviews</div>
+					<div class="feature-description">People leave reviews and/or rate things</div>
+					<customswitch></customswitch>
+				</div>
+				<div class="col-md-one-fifth feature">
+					<img src="/static/applab_web/images/features/sharing.png">
+					<div class="feature-title">Sharing Functions</div>
+					<div class="feature-description">Share on Twitter, Facebook, Email</div>
+					<customswitch></customswitch>
+				</div>
+				<div class="col-md-one-fifth feature">
+					<img src="/static/applab_web/images/features/social_login.png">
+					<div class="feature-title">Social Login</div>
+					<div class="feature-description">Login via Twitter, Facebook, etc...</div>
+					<customswitch></customswitch>
+				</div>
+				<div class="col-md-one-fifth feature">
+					<img src="/static/applab_web/images/features/search.png">
+					<div class="feature-title">Search</div>
+					<div class="feature-description">People can serach/browser/filter</div>
+					<customswitch></customswitch>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-offset-1 col-md-10">
+					<div class="row">
+						<div class="col-md-3 feature">
+							<img src="/static/applab_web/images/features/payments.png">
+							<div class="feature-title">Accept Payments</div>
+							<div class="feature-description">Accept credit cards, Paypay, Bitcoin</div>
+							<customswitch></customswitch>
+						</div>
+						<div class="col-md-3 feature">
+							<img src="/static/applab_web/images/features/profiles.png">
+							<div class="feature-title">Profiles</div>
+							<div class="feature-description">People can enter information</div>
+							<customswitch></customswitch>
+						</div>
+						<div class="col-md-3 feature">
+							<img src="/static/applab_web/images/features/location.png">
+							<div class="feature-title">Location/Navigation</div>
+							<div class="feature-description">A map, GPS tracking </div>
+							<customswitch></customswitch>
+						</div>
+						<div class="col-md-3 feature">
+							<img src="/static/applab_web/images/features/api.png">
+							<div class="feature-title">An Api</div>
+							<div class="feature-description">Data connected with a website or Apps</div>
+							<customswitch></customswitch>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row recommendations">
+			<div class="text-center">
+				<p>Based on your selection, we recommend the following budgets or start with your own:</p>
+				<div class="col-md-offset-4 col-md-4">
+					<div class="row options">
+						<div class="option col-md-6">
+							<img src="/static/applab_web/images/features/standart_design.png">
+							<div>Standard Design</div>
+							<div class="price">2800$</div>
+						</div>
+						<div class="option col-md-6">
+							<div class="input-group">
+								<span class="input-group-addon">
+									$
+								</span>
+								<input type="text" class="form-control" aria-label="...">
+								<span class="input-group-addon">
+									NZD
+								</span>
+							</div>
+							<div class="own-budget-description">I'd like to work with my own budget</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="submit-button form-group col-xs-12">
+				<a class="col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2" href="#{{step}}" >Continue</a>
+			</div>
+		</div>
+	</div>
+</div>

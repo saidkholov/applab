@@ -19,7 +19,7 @@ angular.module('ProjectServices').
 				}
 			},
 			getTemplate : function(step) {
-				return '/static/applab_web/js/start-your-project/views/' + templates[step] + '.html';
+				return '/static/applab_web/js/start-your-project/templates/' + templates[step] + '.html';
 			}
 		};
 		return publicApi;
