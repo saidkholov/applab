@@ -1,6 +1,5 @@
 angular.module('ProjectControllers')
-	.controller('stepCtrl', ['$scope', '$http','$routeParams','$location', 'Sequence', function($scope, $http, $routeParams, $location, Sequence) {
-		console.log($scope.formData);
+	.controller('stepCtrl', ['$scope', '$http','$routeParams','$location',  'Sequence', function($scope, $http, $routeParams, $location, Sequence) {
 		if (!$scope.formData.email) {
 			// $location.path('/')
 		}

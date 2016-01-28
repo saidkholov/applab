@@ -1,4 +1,4 @@
 angular.module('ProjectControllers').
-	controller('productTypeCtrl', ['$scope', 'formData', function($scope, formData) {
+	controller('productTypeCtrl', ['$scope', function($scope) {
 		
 	}]);

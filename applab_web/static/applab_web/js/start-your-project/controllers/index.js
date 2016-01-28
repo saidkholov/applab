@@ -1,3 +1,3 @@
 angular.module('ProjectControllers')
-	.controller('indexCtrl', ['$scope', '$http','formData','Sequence', function($scope, $http, formData, Sequence) {
+	.controller('indexCtrl', ['$scope', '$http','Sequence', function($scope, $http, Sequence) {
 	}]);

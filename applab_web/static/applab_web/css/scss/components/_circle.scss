@@ -1,0 +1,29 @@
+%inner-circle {
+    content: " ";
+    border-radius: 50%;
+    padding: 3px 10px;
+}
+
+.options {
+    .option {
+        .circle {
+            border-radius: 50%;
+            background-color: #fff;
+            box-shadow: 3px 3px 6px #ccc;
+            padding: 4px;
+            display: inline-block;
+            &:after {
+                @extend %inner-circle;
+                background: #d0d2d2;
+            }
+        }
+        &.active {
+            .circle {
+                &:after {
+                    @extend %inner-circle;
+                    background: #77d3d6;
+                }
+            }
+        }
+    }
+}
