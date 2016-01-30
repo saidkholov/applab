@@ -8,17 +8,20 @@ html, body {
 }
 .wrap {
   min-height: 100%;
-  margin-bottom: -$footer-height; 
+  margin-bottom: -$footer-height;
   &:after {
 		content: "";
 		display: block;
-		height: $footer-height; 
+		height: $footer-height;
 	}
 }
 
 footer {
-	height: $footer-height; 
-	background: #000;
+	height: $footer-height;
+	background: #2a3333;
+    ul li {
+        color: white;
+    }
 	.footer-inner {
 		border-top: 1px solid #ccc;
 		display: table;

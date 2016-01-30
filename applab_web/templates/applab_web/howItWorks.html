@@ -1,0 +1,94 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>The App Lab</title>
+
+        <!-- Bootstrap -->
+        <link href="{% static 'applab_web/dist/css/applab.min.css' %}" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="{% static 'applab_web/js/jquery.min.js' %}"></script>
+    </head>
+    <body>
+        <div class="howItWorks wrap">
+            <header>
+                <nav class="navbar">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header navbar-default">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li ><a href="/">Home <span class="sr-only">(current)</span></a></li>
+                                <li class="active"><a href="/how-it-works">How it works</a></li>
+                                <li><a href="#">Referrals</a></li>
+                                <li class="hidden-xs"><a href="#"><img src="{% static 'applab_web/images/logo.png' %}"></a></li>
+                                <li><a href="#">Stories</a></li>
+                                <li><a href="/start-your-project">Start your project</a></li>
+                                <li class="active"><a href="#">Login</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+                <h1 class="title"> How we work</h1>
+            </header>
+            <div class="container content">
+                <p>When we started Crew, we outlined our principles for how we would work as a team. We focus on providing each member on our team the autonomy and tools needed to do their best work.
+                This all starts with trust.</p>
+
+                <p>We want you to feel like you run the ship for whatever project you’re working on. You will get all the support you need, but you will have the autonomy to manage yourself.</p>
+
+                <p>We hire you because we trust you will do great work and we want you to feel good while doing it.</p>
+
+                <p>This is also one of the reasons we don’t work set hours. You will make your schedule and can work from wherever you want most of the time. We have a few occasions where we need to be together, but you are mostly in charge of shaping your days.</p>
+                <p>We’ve found that this approach makes us all feel the best while working and ends up making everyone more productive. Sometimes you might prefer to work in the morning while other times your energy level might be highest when the only thing on TV are infomercials. We believe you should be able to structure your schedule for what makes you feel the most energetic, creative, and happy.</p>
+                <p>We love people who try things, who tinker. If you’ve got ideas that would be useful for our members, we won’t hold you back. Instead, we’ll help provide the resources to make it happen.</p>
+                <p>We will give oxygen to your ideas.</p>
+                <p>Starting a company is hard so it’s also important to reflect sometimes and take in what’s happening now. Ten years from now, we’ll probably look back and realize that right now was the time of our lives. We’ll work hard but we’ll learn a ton together and have fun while we’re at it.</p>
+            </div>
+        </div>
+        <footer>
+        	<div class="container">
+        		<div class="row">
+		        	<div class="footer-inner">
+	        			<div class="col-xs-4">
+	        				<img src="{% static 'applab_web/images/logo.png' %}">
+	        			</div>
+	        			<div class="col-xs-4">
+	        				Share icons go here
+	        			</div>
+	        			<div class="col-xs-4">
+	        				<ul>
+	        					<li><a href="#">Terms</a></li>
+	        					<li>The App Lab © 2015</li>
+	        					<li><a href="#">Privacy</a></li>
+	        				</ul>
+	        			</div>
+	        		</div>
+	        	</div>
+        	</div>
+        </footer>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script type="text/javascript" src="{% static 'applab_web/dist/js/applab.min.js' %}"></script>
+
+    </body>
+</html>

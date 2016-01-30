@@ -1,0 +1,19 @@
+.howItWorks {
+    header {
+        background: url(../../images/how-it-works.jpg);
+        background-size: cover;
+        overflow: hidden;
+        .title {
+            color: white;
+            text-align: center;
+            font: {
+                family:'Gotham-Book';
+                size: 54px;
+            };
+            margin-bottom: 60px;
+        }
+    }
+    .content {
+        padding: 20px;
+    }
+}
